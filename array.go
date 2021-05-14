@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func printarray(arr *[5]int) {
+func printarray(arr []int) {
 	//for i := 0; i < len(arr3); i++ {
 	//	fmt.Println(arr3[i])
 	//}
@@ -21,9 +21,9 @@ func main() {
 	fmt.Println(arr1, arr2, arr3)
 	fmt.Println(grid)
 	fmt.Println("printarray(arr1)")
-	printarray(&arr1)
+	printarray(arr1[:])
 	fmt.Println("printarray(arr3)")
-	printarray(&arr3)
+	printarray(arr3[:])
 	fmt.Println("arr1 and arr3")
 	fmt.Println(arr1, arr3)
 }
