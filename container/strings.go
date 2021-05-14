@@ -14,4 +14,6 @@ func main() {
 		fmt.Printf("(%d %x)", i, ch)
 	}
 	fmt.Println()
+
+	fmt.Println("hello")
 }
