@@ -26,15 +26,6 @@ func (node *Node) SetValue(value int) {
 	node.Value = value
 }
 
-func (node *Node) Traverse() {
-	if node == nil {
-		return
-	}
-	node.Left.Traverse()
-	node.Print()
-	node.Right.Traverse()
-}
-
 /*使用了自定义工厂函数，注意返回了局部变量的地址*/
 func CreateNode(value int) *Node {
 	return &Node{Value: value}
